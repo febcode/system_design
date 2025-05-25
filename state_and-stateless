@@ -1,0 +1,55 @@
+stateful and stateless systems differ in how they manage user sessions and data persistence.
+- Stateful systems retain information about previous interactions, while stateless systems treat each request as independent. This affects scalability, performance, and ease of development. 
+
+# Stateful Systems:
+Definition:
+Maintain information about the user's session on the server between requests. 
+
+## Advantages:
+- Personalized Experiences: Can provide more personalized experiences by remembering user preferences and past interactions. 
+- Improved Performance: Can improve performance by retrieving data only once and reusing it for subsequent requests. 
+
+## Disadvantages:
+- Scalability Challenges: Can be harder to scale horizontally, as each request needs to be directed to the server that has the user's session. 
+- Higher Resource Consumption: Require more storage to maintain user session data. 
+Increased Complexity: More complex to manage and maintain. 
+
+# Stateless Systems:
+Definition:
+Treat each request as independent, without maintaining any information about previous interactions on the server. 
+## Advantages:
+- High Scalability: Easily scaled horizontally by distributing requests across multiple servers. 
+- Fault Tolerance: More resilient to failures because each server can handle requests independently. 
+Simpler Deployment: Easier to deploy and manage. 
+- Faster Transactions: Each request can be processed independently, leading to faster transaction times. 
+## Disadvantages:
+- Less Personalized: Can't provide as personalized experiences as stateful systems. 
+- Potential Performance Overhead: May have performance overhead if each request needs to retrieve the same data from a database. 
+
+Key Differences in a Table:
+|Feature|Stateful Systems|Stateless Systems|
+
+Session Management|
+Maintain user sessions on the server|
+Treat each request as a new session|
+
+Data Persistence|
+Retain data between requests|
+Do not retain data between requests|
+
+Scalability|
+Can be harder to scale horizontally|
+Highly scalable, easy to scale horizontally|
+
+Performance|
+Can improve performance in some cases|
+May have performance overhead in some cases|
+
+Complexity|
+More complex to manage and maintain|
+Simpler to manage and maintain|
+
+Examples:
+Stateful: A shopping cart that remembers items added by a user across multiple pages of a website. 
+
+Stateless: A simple web page that displays content based on a user's search query. 
