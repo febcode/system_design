@@ -70,7 +70,7 @@ Push the data into a queue (like Redis, RabbitMQ, or a simple database table)
 
 A background worker picks it up and processes it
 
-
+'''
 
 ---
 
@@ -109,6 +109,7 @@ rq worker
 
 
 ---
+'''
 
 Summary
 
